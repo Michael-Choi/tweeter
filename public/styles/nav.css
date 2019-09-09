@@ -2,7 +2,7 @@ nav {
   font-family: "Bungee";
   background-color: blue;
   color: aliceblue;
-  height: 120px;
+  height: 10vh;
   width: 100%;
   z-index: 10;
   position: fixed;

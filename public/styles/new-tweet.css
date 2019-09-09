@@ -1,0 +1,33 @@
+.new-tweet {
+  width: 80%;
+  margin: auto;
+  height: 150px;
+}
+.container {
+  max-width: 700px;
+}
+.new-tweet > form > textarea {
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid grey;
+  height: 45px;
+  background-color: #f4f1ec;
+}
+.new-tweet > form {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80%;
+  margin: auto;
+}
+.new-tweet > form > input {
+  height: 4vh;
+  width: 20%;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 0.8em;
+  font-family: "Bungee";
+}
