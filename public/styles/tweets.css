@@ -1,0 +1,22 @@
+.tweets {
+  border: 1px solid red;
+  width: 80%;
+  margin: 0 auto;
+}
+.tweetheaders {
+  display: flex;
+  justify-content: space-between;
+}
+article {
+  width: 80%;
+  margin: 0 auto;
+}
+.tweetfooters {
+  border-top: 5px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets:hover {
+  box-shadow: 5px 10px 10px;
+}
