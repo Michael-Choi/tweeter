@@ -19,7 +19,7 @@ html {
 body {
   background-image: url("../images/45-degree-fabric-dark.png");
   color: #545149;
-  background-color: #f4f1ec;
+  /* background-color: #aaaaaa; */
   font-size: 24px;
   font-family: "Source Sans Pro", "sans-serif";
 }
@@ -28,9 +28,15 @@ main {
   position: relative;
   top: 120px;
   width: 90%;
-  background-color: #f4f1ec;
-  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #aaaaaa;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 10px;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+.jumpToTop {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}

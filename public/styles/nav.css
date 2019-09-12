@@ -1,8 +1,9 @@
 nav {
+  top: 0px;
   font-family: "Bungee";
-  background-color: blue;
-  color: aliceblue;
-  height: 10vh;
+  background-color: #25274d;
+  color: #aaabb8;
+  height: 8vh;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -12,5 +13,27 @@ nav > div {
   justify-content: space-around;
   position: relative;
   top: 50%;
+  font-size: 1.2em;
+  text-shadow: 4px 4px 5px #000000;
   transform: translateY(-50%);
+}
+
+nav span:hover {
+  transition: text-shadow 1s;
+  text-shadow: 4px 4px 5px #29648a;
+}
+
+#toggle-btn {
+  border: none;
+  outline: none;
+  background-color: #25274d;
+  color: #aaabb8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#toggle-btn:hover {
+  cursor: pointer;
 }

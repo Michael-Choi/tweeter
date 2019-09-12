@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  $("textarea").on("keypress", function() {
+  $("textarea").on("input", function() {
     let textLen = $(this).val().length;
-    console.log(textLen);
+    //console.log(textLen);
     if (140 - textLen <= 0) {
       $(this)
         .parent()

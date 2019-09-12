@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -18,34 +20,43 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/error.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  </head>
 
-    <!-- App JS -->
-    
+  <!-- App JS -->
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <div>
         <span>tweeter</span>
-        <span>Write a new tweet</span>
+        <button id="toggle-btn" onclick="focusMethod()">
+          <b>Write</b> a new tweet
+        </button>
       </div>
     </nav>
 
     <header>
       <div>
-        <img src="/images/profile-hex.png" />
+        <img
+          src="/images/profile-hex.png"
+          alt="Profile picture of Michael Choi"
+        />
       </div>
-      <br />
-      <div>
+      <div class="flexbreak"></div>
+      <div class="name">
         <h2>Michael Choi</h2>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div class="error Hidden">
+        Please enter text that is less than 140 characters
+      </div>
       <section class="new-tweet">
         <form action="/tweets" method="POST">
           <textarea
@@ -56,25 +67,17 @@
           <span class="counter">140</span>
         </form>
       </section>
+
+      <!-- Container for tweets to be appended to -->
       <article id="tweets-container"></article>
-      <article class="tweet"></article>
-      <!-- <section class="tweets">
-        <div class="tweetheaders">
-          <span>USER Photo</span>
-          <span>@username</span>
-        </div>
-        <article>Main Tweetbody goes here</article>
-        <div class="tweetfooters">
-          <span>x days ago</span>
-          <span>icons </span>
-        </div>
-      </section> -->
+      <button onclick="jump()" class="jumpToTop Hidden">Jump to Top</button>
     </main>
-    <script
-      type="text/javascript"
-      src="./scripts/composer-char-counter.js"
-    ></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
-  </head>
   </body>
+
+  <!-- JS -->
+  <script
+    type="text/javascript"
+    src="./scripts/composer-char-counter.js"
+  ></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
 </html>

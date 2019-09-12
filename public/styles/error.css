@@ -1,0 +1,14 @@
+.Show {
+  display: block;
+}
+.Hidden {
+  display: none;
+}
+.error {
+  width: 90%;
+  text-align: center;
+  margin: 15px auto;
+  color: red;
+  font-weight: 500;
+  text-decoration: underline;
+}
