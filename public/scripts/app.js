@@ -12,11 +12,15 @@ function renderTweets(tweets) {
 }
 
 function createTweetElement(tweetData) {
+  console.log(tweetData);
   const tweet = `
   <section class="tweets">
   <div class="tweetheaders">
-    <img src="${escape(tweetData.user.avatars)}" ></a>
-    <span>${escape(tweetData.user.name)}</span>
+    <div>
+      <img src="${escape(tweetData.user.avatars)}" ></a>
+      <span class="username">${escape(tweetData.user.name)}</span>
+    </div>
+    <p class="handle">${escape(tweetData.user.handle)}</p>
   </div>
   <article>${escape(tweetData.content.text)}</article>
   <div class="tweetfooters">

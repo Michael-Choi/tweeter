@@ -1,45 +1,46 @@
+$dark: #25274d;
+$grey: #aaabb8;
+$black: #000000;
+$teal: #29648a;
 nav {
   display: flex;
   align-items: center;
   font-family: "Bungee";
-  background-color: #25274d;
-  color: #aaabb8;
+  background-color: $dark;
+  color: $grey;
   height: 8vh;
   width: 100%;
   z-index: 10;
   position: fixed;
 }
-
 nav > div {
   display: flex;
   justify-content: space-around;
   position: relative;
   align-items: center;
-  margin: 10px;
-  width: 100%;
+  margin: 10px
+  width: 100%
+  
   font-size: 1.2em;
-  text-shadow: 4px 4px 5px #000000;
+  text-shadow: 4px 4px 5px $black;
 }
 
 nav span:hover {
   transition: text-shadow 1s;
-  text-shadow: 4px 4px 5px #29648a;
+  text-shadow: 4px 4px 5px $teal;
 }
 
 #toggle-btn {
   border: none;
   outline: none;
-  background-color: #25274d;
-  color: #aaabb8;
+  background-color: $dark;
+  color: $grey;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
-
 #toggle-btn:hover {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=nav.css.map */

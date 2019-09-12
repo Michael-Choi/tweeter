@@ -9,7 +9,6 @@ nav {
   z-index: 10;
   position: fixed;
 }
-
 nav > div {
   display: flex;
   justify-content: space-around;
@@ -37,9 +36,6 @@ nav span:hover {
   display: inline-block;
   font-size: 16px;
 }
-
 #toggle-btn:hover {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=nav.css.map */

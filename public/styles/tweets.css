@@ -9,7 +9,12 @@
 .tweetheaders {
   margin: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.tweetheaders div {
+  display: flex;
+  align-items: center;
 }
 article {
   width: 80%;
@@ -27,4 +32,11 @@ article {
 
 .tweets:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.handle {
+  visibility: hidden;
+}
+.tweets:hover .handle {
+  visibility: visible;
 }

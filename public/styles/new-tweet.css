@@ -1,5 +1,5 @@
 .new-tweet {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   vertical-align: middle;
   height: 150px;
@@ -22,15 +22,18 @@
   justify-content: space-between;
   flex-wrap: wrap;
   height: 80%;
-  margin: 0 auto;
-  /* border: 2px solid grey; */
-  opacity: 1;
+  margin: 15px auto;
+  width: 80%;
 }
 .new-tweet > form > input {
   height: 4vh;
-  width: 20%;
+
   background-color: blue;
   color: aliceblue;
   font-size: 0.8em;
   font-family: "Bungee";
+}
+
+.tweetbtn {
+  color: black;
 }

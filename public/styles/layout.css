@@ -19,7 +19,6 @@ html {
 body {
   background-image: url("../images/45-degree-fabric-dark.png");
   color: #545149;
-  /* background-color: #aaaaaa; */
   font-size: 24px;
   font-family: "Source Sans Pro", "sans-serif";
 }
@@ -39,4 +38,19 @@ main {
   position: fixed;
   bottom: 5%;
   right: 5%;
+}
+
+/* desktop Styles */
+@media only screen and (min-width: 768px) {
+  .container {
+    position: absolute;
+    right: 0;
+    width: 45%;
+    top: 8vh;
+    margin-right: 5%;
+  }
+  header {
+    margin-left: 5%;
+    width: 40%;
+  }
 }
