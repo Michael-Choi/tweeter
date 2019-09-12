@@ -43,14 +43,20 @@ main {
 /* desktop Styles */
 @media only screen and (min-width: 768px) {
   .container {
-    position: absolute;
-    right: 0;
-    width: 45%;
-    top: 8vh;
-    margin-right: 5%;
+    grid-area: tweets;
   }
-  header {
-    margin-left: 5%;
-    width: 40%;
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header tweets tweets"
+      "header header tweets tweets";
+  }
+  #background {
+    position: sticky;
+    width: 90%;
+    margin: 0 auto;
   }
 }

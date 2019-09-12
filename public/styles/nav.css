@@ -1,5 +1,7 @@
 nav {
+  grid-area: nav;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: "Bungee";
   background-color: #25274d;
@@ -8,6 +10,7 @@ nav {
   width: 100%;
   z-index: 10;
   position: fixed;
+  padding: 10px;
 }
 
 nav > div {
@@ -41,5 +44,3 @@ nav span:hover {
 #toggle-btn:hover {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=nav.css.map */
