@@ -33,17 +33,17 @@ function createTweetElement(tweetData) {
   `;
   return $(tweet);
 }
+//escape function makes text safe and prevents injection
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+//on submit, if the text input is valid makes a post request. then displays the error message if the post is invalid
 $("form").on("submit", async function(event) {
   event.preventDefault();
-
   let queryString = await $(this).serialize();
-  console.log(queryString);
   if (queryString.length < 145 && queryString.length > 5) {
     try {
       $.ajax({
@@ -59,7 +59,6 @@ $("form").on("submit", async function(event) {
       toggleerror(error);
     } catch (err) {
       error = true;
-      console.log(err);
     }
   } else {
     error = true;
@@ -120,6 +119,7 @@ $(window).scroll(function() {
       .addClass("Hidden");
   }
 });
+//jumps the user to top of page
 function jump() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
