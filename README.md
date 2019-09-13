@@ -28,8 +28,8 @@ npm start
 
 1. Create a tweet!
 
-   !["Create a tweet!"]()
+   !["Create a tweet!"](https://github.com/Michael-Choi/tweeter/blob/master/docs/createtweet.png)
 
 2. View on mobile!
 
-   !["View on mobile!"]()
+   !["View on mobile!"](https://github.com/Michael-Choi/tweeter/blob/master/docs/mobile.png)
