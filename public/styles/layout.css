@@ -45,14 +45,17 @@ main {
   .container {
     grid-area: tweets;
   }
+  header {
+    border-radius: 0 0 15px 15px;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-      "nav nav nav nav"
-      "header header tweets tweets"
-      "header header tweets tweets";
+      "nav nav"
+      "header tweets"
+      "header tweets";
   }
   #background {
     position: sticky;
